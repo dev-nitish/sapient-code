@@ -1,0 +1,23 @@
+
+*{
+    background-color: white;
+}
+
+.btn-custom{
+    margin-bottom: 10px;
+    background-color: olivedrab;
+    border: olivedrab;
+    border-radius: 5px 5px 5px 5px;
+}
+
+hr{
+    width: 70%;
+}
+
+.card-custom{
+min-width: 18rem;
+}
+
+.selected{
+    background-color: rgb(68, 88, 28);
+}

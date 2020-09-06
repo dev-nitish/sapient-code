@@ -1,0 +1,124 @@
+<div class="card card-custom" style="width: 15rem; margin-bottom: 1rem;">
+    <div class="card-body">
+        <h6 class="card-title">Filters</h6>
+        <div>
+            <p class="text-center"><b class="class-subtitle">Launch Year
+                    <hr /></b>
+            </p>
+
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2006}"
+                        (click)="getYear(2006)">2006</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2007}"
+                        (click)="getYear(2007)">2007</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2008}"
+                        (click)="getYear(2008)">2008</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2009}"
+                        (click)="getYear(2009)">2009</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2010}"
+                        (click)="getYear(2010)">2010</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 20011}"
+                        (click)="getYear(2011)">2011</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2012}"
+                        (click)="getYear(2012)">2012</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2013}"
+                        (click)="getYear(2013)">2013</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2014}"
+                        (click)="getYear(2014)">2014</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2015}"
+                        (click)="getYear(2015)">2015</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2016}"
+                        (click)="getYear(2016)">2016</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2017}"
+                        (click)="getYear(2017)">2017</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2018}"
+                        (click)="getYear(2018)">2018</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2019}"
+                        (click)="getYear(2019)">2019</button>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom" [ngClass]="{'selected': filter.year == 2020}"
+                        (click)="getYear(2020)">2020</button>
+                </div>
+                <div class="col-5">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="text-center"><b class="class-subtitle">Sucessful Launch
+                    <hr /></b></p>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom"
+                        [ngClass]="{'selected': filter.sucessLaunch == true}"
+                        (click)="getSucessLaunch(true)">True</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom"
+                        [ngClass]="{'selected': filter.sucessLaunch == false}"
+                        (click)="getSucessLaunch(false)">False</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <p class="text-center"><b class="class-subtitle">Sucessful Landing
+                    <hr /></b></p>
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom"
+                        [ngClass]="{'selected': filter.sucessLanding == true}"
+                        (click)="getSucessLanding(true)">True</button>
+                </div>
+                <div class="col-5">
+                    <button class="btn-primary btn-block btn-custom"
+                        [ngClass]="{'selected': filter.sucessLanding == false}"
+                        (click)="getSucessLanding(false)">False</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

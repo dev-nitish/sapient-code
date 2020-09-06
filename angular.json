@@ -24,6 +24,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sapient-coding"
+    }
+  },
+  "defaultProject": "sapient-coding",
+  "cli": {
+    "analytics": "2d95d511-70cf-484e-a267-75de0a6d8862"
+  }
 }

@@ -1,0 +1,37 @@
+<div class="card select-card" style="width: 18rem;height: 35rem; margin-bottom: 1rem;">
+    <img [src]="payload.links.mission_patch_small" class="card-img-top" alt="Unable to load image">
+    <div class="card-body mission-details">
+        <div>
+            <b class="card-title text-primary">{{payload.mission_name}}</b>
+        </div>
+        <div>
+            <span><b class="card-text">Mission Ids:</b></span>
+            <span class="mb-2 text-muted">
+                <ul *ngIf="payload.mission_id.length!=0">
+                    <li *ngFor="let id of payload.mission_id">{{id}}</li>
+                </ul>
+                <ul *ngIf="payload.mission_id.length==0">
+                    <li *ngIf="payload.mission_id.length==0">N/A</li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <span><b class="card-text">Launch Year: </b></span>
+            <span class="mb-2 text-muted text-right">{{payload.launch_year}}</span>
+        </div>
+        <div>
+            <span><b class="card-text">Sucessful Launch: </b></span>
+            <span *ngIf="payload.launch_success!=null"
+                class="mb-2 text-muted text-right">{{payload.launch_success.toString() | titlecase}}</span>
+            <span *ngIf="payload.launch_success==null" class="mb-2 text-muted text-right">N/A</span>
+        </div>
+        <div>
+            <span><b class="card-text">Sucessful Landing: </b></span>
+            <span
+                *ngIf="(payload.rocket.first_stage.cores[0].land_success==true) || (payload.rocket.first_stage.cores[0].land_success==true)"
+                class="mb-2 text-muted text-right">{{payload.rocket.first_stage.cores[0].land_success.toString() | titlecase}}</span>
+            <span *ngIf="payload.rocket.first_stage.cores[0].land_success==null"
+                class="mb-2 text-muted text-right">N/A</span>
+        </div>
+    </div>
+</div>
